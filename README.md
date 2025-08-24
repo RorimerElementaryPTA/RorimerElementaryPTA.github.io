@@ -10,3 +10,10 @@ python3 -m http.server 8000
 ```
 
 To publish with GitHub Pages, push to the `main` branch and enable Pages in repository settings (root directory).
+
+Membership purchases
+--------------------
+To buy a PTA membership online use our partner page:
+
+http://jointotem.com/ca/la-puente/rorimer-elementary/join
+

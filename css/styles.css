@@ -8,6 +8,10 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .container{max-width:var(--max-width);margin:0 auto;padding:1rem}
 .site-header{background:#f7f9fb;border-bottom:1px solid #e6eef6}
 .header-inner{display:flex;align-items:center;gap:1rem;padding:0.5rem 1rem}
+.brand-row{display:flex;align-items:center;gap:0.75rem}
+.header-cta{margin-left:auto}
+.btn--primary{background:#e83e3e}
+.btn--primary:hover{background:#c43232}
 .logo{width:56px;height:56px}
 .site-title{font-size:1.25rem;margin:0}
 .main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:0.75rem}
