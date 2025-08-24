@@ -7,19 +7,51 @@
 body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;margin:0;color:#222}
 .container{max-width:var(--max-width);margin:0 auto;padding:1rem}
 .site-header{background:#f7f9fb;border-bottom:1px solid #e6eef6}
-.header-inner{display:flex;align-items:center;gap:1rem;padding:0.5rem 1rem}
-.brand-row{display:flex;align-items:center;gap:0.75rem}
-.header-cta{margin-left:auto}
+.header-inner{display:flex;align-items:center;gap:1rem;padding:0.5rem 1rem;flex-wrap:wrap}
+.brand-row{display:flex;align-items:center;gap:0.75rem;flex:1;min-width:0}
+.header-cta{margin-left:auto;display:flex;align-items:center;flex-wrap:wrap}
 .btn--primary{background:#e83e3e}
 .btn--primary:hover{background:#c43232}
 
 .btn--secondary{background:#1b6ca8;color:#fff}
 .btn--secondary:hover{background:#155a89}
 .header-cta a{margin-left:0.5rem}
-.lang-switcher{font-size:0.9rem;margin-right:1rem}
-.lang-link{color:var(--brand);text-decoration:none;font-weight:600}
-.lang-link.active{color:#222;font-weight:700}
-.lang-separator{color:var(--muted);margin:0 0.25rem}
+.lang-switcher{
+  display:inline-flex;
+  align-items:center;
+  background:#f8f9fa;
+  border:1px solid #e6eef6;
+  border-radius:20px;
+  padding:0.25rem 0.5rem;
+  margin-right:1rem;
+  font-size:0.85rem;
+  box-shadow:0 1px 3px rgba(0,0,0,0.1);
+}
+.lang-link{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+  padding:0.25rem 0.5rem;
+  border-radius:14px;
+  transition:all 0.2s ease;
+  min-width:28px;
+  text-align:center;
+}
+.lang-link:hover{
+  color:var(--brand);
+  background:rgba(27,108,168,0.1);
+}
+.lang-link.active{
+  color:#fff;
+  background:var(--brand);
+  font-weight:700;
+  box-shadow:0 1px 2px rgba(0,0,0,0.15);
+}
+.lang-separator{
+  color:#d1d5db;
+  margin:0 0.125rem;
+  font-weight:300;
+}
 .logo{width:56px;height:56px}
 .site-title{font-size:1.25rem;margin:0}
 .main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:0.75rem}
@@ -35,6 +67,10 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .site-footer{padding:1rem 0;text-align:center;color:var(--muted)}
 
 @media (max-width:600px){
-  .header-inner{flex-direction:column;align-items:flex-start}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:0.75rem}
+  .brand-row{align-self:stretch}
   .main-nav ul{flex-wrap:wrap}
+  .header-cta{align-self:stretch;justify-content:space-between;align-items:center}
+  .lang-switcher{margin-right:0;order:1}
+  .header-cta .btn{order:2}
 }
