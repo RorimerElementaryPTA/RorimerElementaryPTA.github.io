@@ -1,0 +1,40 @@
+{
+  "events": [
+    {"title":"Venta de Camisetas del Espíritu Escolar","group":"Todo el Año","description":"Ordene ropa del espíritu escolar de Rorimer durante todo el año para mostrar el orgullo escolar; las ganancias apoyan los programas estudiantiles."},
+    {"title":"Asistencia de Financiamiento para Excursiones y Autobuses","group":"Todo el Año","description":"Las subvenciones del PTA y la recaudación de fondos ayudan a cubrir el transporte y las tarifas de excursiones para estudiantes necesitados."},
+
+    {"title":"Orientación de Kindergarten","group":"Agosto","description":"Una orientación para las familias de kindergarten entrantes para conocer a los maestros y aprender sobre el día escolar."},
+    {"title":"Noche de Regreso a la Escuela","group":"Agosto","description":"Conozca al maestro de su hijo y aprenda sobre el currículo y las rutinas del aula."},
+    {"title":"Noche de Película Familiar","group":"Agosto","description":"Un evento nocturno al aire libre/noche de película para que las familias se reconecten antes de que comience el año escolar."},
+
+    {"title":"Recaudación de Fondos de Otoño","group":"Septiembre","description":"Campaña anual de recaudación de fondos de otoño para apoyar los recursos del aula y los programas escolares."},
+
+    {"title":"Festival de Cosecha y Trunk-or-Treat (con Telesis)","group":"Octubre","description":"Un festival familiar con juegos, comida y un trunk-or-treat opcional en asociación con Telesis."},
+
+    {"title":"Recaudación de Fondos Comunitaria de McDonald's","group":"Noviembre","description":"Una noche de recaudación de fondos en el restaurante donde una parte de las ganancias beneficia al PTA."},
+
+    {"title":"Noche de Película Navideña","group":"Diciembre","description":"Una noche de película de temporada para que las familias celebren las fiestas juntas."},
+    {"title":"Fotos con Santa y Golosinas","group":"Diciembre","description":"Fotos con Santa más galletas y leche para estudiantes y familias."},
+
+    {"title":"Recaudación de Fondos de Cane's","group":"Enero","description":"Recaudación de fondos en restaurante para apoyar las actividades del PTA."},
+    {"title":"Celebración del Año Nuevo Chino","group":"Enero","description":"Celebración cultural y actividades honrando el Año Nuevo Lunar."},
+
+    {"title":"Día del Fundador","group":"Febrero","description":"Observancia del Día del Fundador del PTA y actividades del aula para celebrar la historia del PTA."},
+    {"title":"Fiesta Real de la Amistad","group":"Febrero","description":"Un evento comunitario que celebra la amistad y la cultura con música y actividades."},
+
+    {"title":"Campaña de Recaudación de Fondos Busy Bee","group":"Marzo","description":"Impulso de recaudación de fondos de primavera con oportunidades de voluntariado y alcance comunitario."},
+    {"title":"Maratón de Lectura","group":"Marzo","description":"Una recaudación de fondos de lectura en toda la escuela para fomentar la alfabetización y recaudar fondos para programas."},
+
+    {"title":"Carrera de Burbujas","group":"Abril","date":"2025-04","description":"Una carrera divertida con burbujas y actividades familiares para recaudar fondos para la escuela."},
+    {"title":"Día del Niño","group":"Abril","date":"2025-04-30","description":"Una celebración de los niños con juegos, actuaciones y actividades culturales el 30 de abril."},
+    {"title":"Decoraciones de Concientización sobre el Autismo","group":"Abril","description":"Decoraciones y actividades en toda la escuela para apoyar el mes de Concientización sobre el Autismo."},
+
+    {"title":"Conferencia Estatal del PTA","group":"Mayo","date":"2025-05","description":"Representación y desarrollo profesional para líderes del PTA en la conferencia estatal."},
+    {"title":"Apoyo a la Olimpiada de Ciencias y Camisetas","group":"Mayo","description":"Apoyo del PTA para los participantes de la Olimpiada de Ciencias, incluyendo camisetas del evento y reconocimiento."},
+    {"title":"Carnaval de Asistencia","group":"Mayo","description":"Un carnaval de primavera para premiar la buena asistencia y celebrar a los estudiantes."},
+    {"title":"Semana de Apreciación del Personal","group":"Mayo","date":"2025-05-05","endDate":"2025-05-09","description":"Una semana de eventos y golosinas para honrar a nuestros maestros y personal."},
+
+    {"title":"Helado y Paletas de Fin de Año","group":"Junio","description":"Helado y paletas para estudiantes durante el almuerzo para celebrar el final del año escolar."},
+    {"title":"Fiesta de Promoción de 6º Grado","group":"Junio","description":"Una celebración especial de fin de año para estudiantes de sexto grado."}
+  ]
+}

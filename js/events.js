@@ -1,12 +1,16 @@
 async function loadEvents() {
   const root = document.getElementById('events-root');
   try {
-    const res = await fetch('data/events.json');
+    // Detect if we're on Spanish pages
+    const isSpanish = window.location.pathname.includes('/es/');
+    const dataPath = 'data/events.json';
+    
+    const res = await fetch(dataPath);
     if (!res.ok) throw new Error('Failed to load events');
     const json = await res.json();
     const events = json.events || [];
     if (!events.length) {
-      root.innerHTML = '<p>No upcoming events yet.</p>';
+      root.innerHTML = isSpanish ? '<p>No hay eventos próximos aún.</p>' : '<p>No upcoming events yet.</p>';
       return;
     }
 
@@ -19,7 +23,10 @@ async function loadEvents() {
     }, {});
 
     root.innerHTML = '';
-    const order = ['All Year','August','September','October','November','December','January','February','March','April','May','June'];
+    // Different order for Spanish vs English
+    const order = isSpanish ? 
+      ['Todo el Año','Agosto','Septiembre','Octubre','Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio'] :
+      ['All Year','August','September','October','November','December','January','February','March','April','May','June'];
 
     order.forEach(groupName => {
       const items = groups[groupName];
@@ -41,11 +48,13 @@ async function loadEvents() {
           let dateText = ev.date;
           // friendly formatting for ISO-like dates
           if (/^\d{4}-\d{2}-\d{2}$/.test(ev.date)) {
-            dateText = new Date(ev.date).toLocaleDateString(undefined, {year:'numeric',month:'short',day:'numeric'});
+            const locale = isSpanish ? 'es-ES' : 'en-US';
+            dateText = new Date(ev.date).toLocaleDateString(locale, {year:'numeric',month:'short',day:'numeric'});
           } else if (/^\d{4}-\d{2}$/.test(ev.date)) {
             const [y,m] = ev.date.split('-');
             const d = new Date(y, parseInt(m,10)-1, 1);
-            dateText = d.toLocaleDateString(undefined, {year:'numeric',month:'long'});
+            const locale = isSpanish ? 'es-ES' : 'en-US';
+            dateText = d.toLocaleDateString(locale, {year:'numeric',month:'long'});
           }
           li.insertAdjacentText('beforeend', ` — ${dateText}`);
         }
@@ -58,7 +67,8 @@ async function loadEvents() {
     });
 
   } catch (err) {
-    root.innerHTML = '<p>Could not load events.</p>';
+    const isSpanish = window.location.pathname.includes('/es/');
+    root.innerHTML = isSpanish ? '<p>No se pudieron cargar los eventos.</p>' : '<p>Could not load events.</p>';
     console.error(err);
   }
 }

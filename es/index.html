@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PTA de la Escuela Primaria Rorimer</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-row">
+        <img src="../assets/logo.svg" alt="Logo de PTA Rorimer" class="logo">
+        <h1 class="site-title">PTA de la Escuela Primaria Rorimer</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html#about">Acerca de</a></li>
+          <li><a href="events.html">Eventos</a></li>
+          <li><a href="volunteer.html">Voluntarios</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switcher">
+          <a href="../index.html" class="lang-link">EN</a>
+          <span class="lang-separator">|</span>
+          <a href="index.html" class="lang-link active">ES</a>
+        </div>
+        <a class="btn btn--secondary" href="spiritwear.html">Ropa Escolar</a>
+        <a class="btn btn--primary" href="membership.html">Únete al PTA</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Bienvenidas familias y comunidad</h2>
+        <p>Apoyamos a la Escuela Primaria Rorimer a través de eventos, voluntariado y asociaciones comunitarias.</p>
+        <a href="volunteer.html" class="btn">Participa</a>
+        <a href="spiritwear.html" class="btn btn--secondary">Comprar Ropa Escolar</a>
+        <a href="membership.html" class="btn btn--primary">Comprar Membresía</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>Acerca de</h2>
+      <p>El PTA de la Escuela Primaria Rorimer reúne a padres, maestros y miembros de la comunidad para apoyar a los estudiantes y al personal. Organizamos eventos, recaudación de fondos y oportunidades de voluntariado para enriquecer la vida escolar.</p>
+    </section>
+
+    <section id="events" class="container section">
+      <h2>Próximos eventos</h2>
+      <p>Vea la lista completa de próximos eventos y detalles en la <a href="events.html">página de Eventos</a>.</p>
+    </section>
+
+    <section id="volunteer" class="container section">
+      <h2>Voluntarios</h2>
+      <p>Aprenda sobre los roles de voluntarios y detalles de inscripción en nuestra <a href="volunteer.html">página de Voluntarios</a>, o envíe un correo electrónico a <a href="mailto:luanaenriquez@yahoo.com">luanaenriquez@yahoo.com</a>.</p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contacto</h2>
+      <p>Correo electrónico: <a href="mailto:luanaenriquez@yahoo.com">luanaenriquez@yahoo.com</a></p>
+      <p>Síguenos en <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a> (enlace de ejemplo).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> PTA de la Escuela Primaria Rorimer</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
