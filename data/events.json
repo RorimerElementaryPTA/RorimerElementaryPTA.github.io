@@ -1,7 +1,40 @@
 {
   "events": [
-    {"title":"Back to School Picnic","date":"2025-09-12","location":"School Field","description":"Meet and greet for families and staff."},
-    {"title":"Fall Fundraiser","date":"2025-10-10","location":"Gym","description":"Fun run and silent auction to support school programs."},
-    {"title":"Book Fair","date":"2025-11-02","endDate":"2025-11-06","location":"Library","description":"Buy books and support classroom libraries."}
+    {"title":"Spirit Shirt Sales","group":"All Year","description":"Order Rorimer spirit wear year-round to show school pride; proceeds support student programs."},
+    {"title":"Field Trip & Bus Funding Assistance","group":"All Year","description":"PTA grants and fundraising help cover transportation and field trip fees for students in need."},
+
+    {"title":"Kindergarten Orientation","group":"August","description":"An orientation for incoming kindergarten families to meet teachers and learn about the school day."},
+    {"title":"Back to School Night","group":"August","description":"Meet your child’s teacher and learn about curriculum and classroom routines."},
+    {"title":"Family Movie Night","group":"August","description":"An evening outdoor/movie-night event for families to reconnect before the school year begins."},
+
+    {"title":"Fall Fundraiser","group":"September","description":"Annual fall fundraising campaign to support classroom resources and school programs."},
+
+    {"title":"Harvest Festival & Trunk-or-Treat (with Telesis)","group":"October","description":"A family-friendly festival with games, food, and an optional trunk-or-treat in partnership with Telesis."},
+
+    {"title":"McDonald’s Community Fundraiser","group":"November","description":"A restaurant fundraiser night where a portion of proceeds benefits the PTA."},
+
+    {"title":"Holiday Movie Night","group":"December","description":"A seasonal movie night for families to celebrate the holidays together."},
+    {"title":"Santa Photos & Treats","group":"December","description":"Photos with Santa plus cookies and milk for students and families."},
+
+    {"title":"Cane’s Fundraiser","group":"January","description":"Restaurant fundraiser to support PTA activities."},
+    {"title":"Chinese New Year Celebration","group":"January","description":"Cultural celebration and activities honoring the Lunar New Year."},
+
+    {"title":"Founder’s Day","group":"February","description":"PTA Founder’s Day observance and classroom activities to celebrate PTA history."},
+    {"title":"Royal Friendship Fiesta","group":"February","description":"A community event celebrating friendship and culture with music and activities."},
+
+    {"title":"Busy Bee Fundraising Drive","group":"March","description":"Spring fundraising push with volunteer opportunities and community outreach."},
+    {"title":"Read-A-Thon","group":"March","description":"A school-wide reading fundraiser to encourage literacy and raise funds for programs."},
+
+    {"title":"Bubble Run","group":"April","date":"2025-04","description":"A fun run with bubbles and family activities to raise funds for the school."},
+    {"title":"Día del Niño","group":"April","date":"2025-04-30","description":"A celebration of children with games, performances, and cultural activities on April 30."},
+    {"title":"Autism Awareness Decorations","group":"April","description":"School-wide decorations and activities to support Autism Awareness month."},
+
+    {"title":"State PTA Conference","group":"May","date":"2025-05","description":"Representation and professional development for PTA leaders at the state conference."},
+    {"title":"Science Olympiad Support & Shirts","group":"May","description":"PTA support for Science Olympiad participants, including event shirts and recognition."},
+    {"title":"Attendance Carnival","group":"May","description":"A spring carnival to reward strong attendance and celebrate students."},
+    {"title":"Staff Appreciation Week","group":"May","date":"2025-05-05","endDate":"2025-05-09","description":"A week of events and treats to honor our teachers and staff."},
+
+    {"title":"End of Year Ice Cream & Paletas","group":"June","description":"Ice cream and paletas for students during lunch to celebrate the end of the school year."},
+    {"title":"6th Grade Promotion Party","group":"June","description":"A special end-of-year celebration for sixth grade students."}
   ]
 }
