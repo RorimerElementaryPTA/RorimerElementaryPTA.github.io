@@ -17,3 +17,9 @@ To buy a PTA membership online use our partner page:
 
 http://jointotem.com/ca/la-puente/rorimer-elementary/join
 
+Spirit wear store
+-----------------
+Shop Rorimer spirit wear online:
+
+https://jointotem.com/ca/la-puente/rorimer-elementary-pta/store
+
