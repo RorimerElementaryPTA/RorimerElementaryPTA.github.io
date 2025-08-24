@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+.tox/
+.pytest_cache/
+coverage/
+
+# Runtime files
+.cache/
+Thumbs.db
+
+# Environment files (may contain secrets)
+.env
+.env.*
+
+# Temporary files
+*.swp
+*.tmp
