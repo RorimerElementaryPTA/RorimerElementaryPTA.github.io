@@ -64,6 +64,9 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .events-list li{margin:0.5rem 0}
 .muted{color:var(--muted);font-size:0.95rem}
 .event-desc{margin-top:0.25rem;color:#333}
+.contact-info{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:1.5rem 0}
+.contact-method h3{margin:0 0 0.5rem 0;font-size:1rem;color:var(--brand)}
+.contact-method p{margin:0;line-height:1.6}
 .site-footer{padding:1rem 0;text-align:center;color:var(--muted)}
 
 @media (max-width:600px){
@@ -73,4 +76,5 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   .header-cta{align-self:stretch;justify-content:space-between;align-items:center}
   .lang-switcher{margin-right:0;order:1}
   .header-cta .btn{order:2}
+  .contact-info{grid-template-columns:1fr;gap:1.5rem}
 }
