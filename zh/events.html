@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>活动 - Rorimer小学家长教师协会</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-row">
+        <img src="../assets/logo.svg" alt="Rorimer PTA标志" class="logo">
+        <h1 class="site-title">Rorimer小学家长教师协会</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html#about">关于我们</a></li>
+          <li><a href="events.html">活动</a></li>
+          <li><a href="volunteer.html">志愿者</a></li>
+          <li><a href="index.html#contact">联系我们</a></li>
+          <li><a href="index.html#social">关注我们</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <div class="lang-switcher">
+          <a href="../events.html" class="lang-link">EN</a>
+          <span class="lang-separator">|</span>
+          <a href="../es/events.html" class="lang-link">ES</a>
+          <span class="lang-separator">|</span>
+          <a href="events.html" class="lang-link active">中文</a>
+        </div>
+        <a class="btn btn--secondary" href="spiritwear.html">校服商店</a>
+        <a class="btn btn--primary" href="membership.html">加入PTA</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <h2>活动日程</h2>
+      <div id="events-root">
+        <p>正在加载活动...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Rorimer小学家长教师协会</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script src="../js/events.js"></script>
+</body>
+</html>

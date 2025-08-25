@@ -1,8 +1,9 @@
 async function loadEvents() {
   const root = document.getElementById('events-root');
   try {
-    // Detect if we're on Spanish pages
+    // Detect language from path
     const isSpanish = window.location.pathname.includes('/es/');
+    const isChinese = window.location.pathname.includes('/zh/');
     const dataPath = 'data/events.json';
     
     const res = await fetch(dataPath);
@@ -10,7 +11,10 @@ async function loadEvents() {
     const json = await res.json();
     const events = json.events || [];
     if (!events.length) {
-      root.innerHTML = isSpanish ? '<p>No hay eventos próximos aún.</p>' : '<p>No upcoming events yet.</p>';
+      let message = '<p>No upcoming events yet.</p>';
+      if (isSpanish) message = '<p>No hay eventos próximos aún.</p>';
+      if (isChinese) message = '<p>暂无即将举行的活动。</p>';
+      root.innerHTML = message;
       return;
     }
 
@@ -23,10 +27,13 @@ async function loadEvents() {
     }, {});
 
     root.innerHTML = '';
-    // Different order for Spanish vs English
-    const order = isSpanish ? 
-      ['Todo el Año','Agosto','Septiembre','Octubre','Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio'] :
-      ['All Year','August','September','October','November','December','January','February','March','April','May','June'];
+    // Different order for each language
+    let order = ['All Year','August','September','October','November','December','January','February','March','April','May','June'];
+    if (isSpanish) {
+      order = ['Todo el Año','Agosto','Septiembre','Octubre','Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio'];
+    } else if (isChinese) {
+      order = ['全年','八月','九月','十月','十一月','十二月','一月','二月','三月','四月','五月','六月'];
+    }
 
     order.forEach(groupName => {
       const items = groups[groupName];
@@ -48,12 +55,16 @@ async function loadEvents() {
           let dateText = ev.date;
           // friendly formatting for ISO-like dates
           if (/^\d{4}-\d{2}-\d{2}$/.test(ev.date)) {
-            const locale = isSpanish ? 'es-ES' : 'en-US';
+            let locale = 'en-US';
+            if (isSpanish) locale = 'es-ES';
+            if (isChinese) locale = 'zh-CN';
             dateText = new Date(ev.date).toLocaleDateString(locale, {year:'numeric',month:'short',day:'numeric'});
           } else if (/^\d{4}-\d{2}$/.test(ev.date)) {
             const [y,m] = ev.date.split('-');
             const d = new Date(y, parseInt(m,10)-1, 1);
-            const locale = isSpanish ? 'es-ES' : 'en-US';
+            let locale = 'en-US';
+            if (isSpanish) locale = 'es-ES';
+            if (isChinese) locale = 'zh-CN';
             dateText = d.toLocaleDateString(locale, {year:'numeric',month:'long'});
           }
           li.insertAdjacentText('beforeend', ` — ${dateText}`);
@@ -68,7 +79,11 @@ async function loadEvents() {
 
   } catch (err) {
     const isSpanish = window.location.pathname.includes('/es/');
-    root.innerHTML = isSpanish ? '<p>No se pudieron cargar los eventos.</p>' : '<p>Could not load events.</p>';
+    const isChinese = window.location.pathname.includes('/zh/');
+    let message = '<p>Could not load events.</p>';
+    if (isSpanish) message = '<p>No se pudieron cargar los eventos.</p>';
+    if (isChinese) message = '<p>无法加载活动。</p>';
+    root.innerHTML = message;
     console.error(err);
   }
 }

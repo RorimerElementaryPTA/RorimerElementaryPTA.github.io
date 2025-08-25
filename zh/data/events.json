@@ -1,0 +1,40 @@
+{
+  "events": [
+    {"title":"校服销售","group":"全年","description":"全年订购Rorimer校服，展示学校精神；收益支持学生项目。"},
+    {"title":"实地考察和巴士资助","group":"全年","description":"PTA补助金和筹款帮助有需要的学生支付交通和实地考察费用。"},
+
+    {"title":"幼儿园新生说明会","group":"八月","description":"为即将入学的幼儿园家庭举办的说明会，与老师见面并了解学校日程。"},
+    {"title":"返校之夜","group":"八月","description":"与您孩子的老师见面，了解课程和课堂常规。"},
+    {"title":"家庭电影之夜","group":"八月","description":"学年开始前的户外电影之夜活动，让家庭重新联系。"},
+
+    {"title":"秋季筹款活动","group":"九月","description":"年度秋季筹款活动，支持课堂资源和学校项目。"},
+
+    {"title":"丰收节和后备箱捣蛋活动（与Telesis合作）","group":"十月","description":"一个适合家庭的节日，有游戏、食物，以及与Telesis合作的可选后备箱捣蛋活动。"},
+
+    {"title":"麦当劳社区筹款活动","group":"十一月","description":"餐厅筹款之夜，部分收益将惠及PTA。"},
+
+    {"title":"节日电影之夜","group":"十二月","description":"家庭共同庆祝节日的季节性电影之夜。"},
+    {"title":"圣诞老人照片和点心","group":"十二月","description":"与圣诞老人合影，为学生和家庭提供饼干和牛奶。"},
+
+    {"title":"Cane's筹款活动","group":"一月","description":"餐厅筹款活动，支持PTA活动。"},
+    {"title":"春节庆祝活动","group":"一月","description":"庆祝农历新年的文化庆祝活动。"},
+
+    {"title":"创始人日","group":"二月","description":"PTA创始人日纪念活动和课堂活动，庆祝PTA历史。"},
+    {"title":"皇家友谊嘉年华","group":"二月","description":"通过音乐和活动庆祝友谊和文化的社区活动。"},
+
+    {"title":"勤劳蜜蜂筹款活动","group":"三月","description":"春季筹款活动，提供志愿机会和社区外展。"},
+    {"title":"阅读马拉松","group":"三月","description":"全校阅读筹款活动，鼓励识字并为项目筹集资金。"},
+
+    {"title":"泡泡跑","group":"四月","date":"2025-04","description":"有泡泡和家庭活动的趣味跑，为学校筹集资金。"},
+    {"title":"儿童节","group":"四月","date":"2025-04-30","description":"4月30日通过游戏、表演和文化活动庆祝儿童。"},
+    {"title":"自闭症意识装饰","group":"四月","description":"全校装饰和活动，支持自闭症意识月。"},
+
+    {"title":"州PTA会议","group":"五月","date":"2025-05","description":"PTA领导在州会议上的代表和专业发展。"},
+    {"title":"科学奥林匹克支持和T恤","group":"五月","description":"PTA支持科学奥林匹克参与者，包括活动T恤和表彰。"},
+    {"title":"出勤嘉年华","group":"五月","description":"春季嘉年华，奖励良好出勤并庆祝学生。"},
+    {"title":"教职员工感谢周","group":"五月","date":"2025-05-05","endDate":"2025-05-09","description":"一周的活动和款待，以表彰我们的教师和员工。"},
+
+    {"title":"年终冰淇淋和冰棍","group":"六月","description":"午餐时为学生提供冰淇淋和冰棍，庆祝学年结束。"},
+    {"title":"六年级毕业派对","group":"六月","description":"为六年级学生举办的特别年终庆祝活动。"}
+  ]
+}
